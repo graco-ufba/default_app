@@ -5,5 +5,4 @@ Essa aplicação é apenas uma página html estática com logo, uma mensagem de 
 
 - index.html: conteúdo da página;
 - logo.png: logo do servidor de aplicações;
-- .static: arquivo vazio necessário para que o Dokku Server entenda que a aplicação é um site estático e utilize os buildpacks NGINX necessários para sua implementaç
-
+- .static: arquivo vazio necessário para que o Dokku Server entenda que a aplicação é um site estático e utilize os buildpacks NGINX necessários para sua implementação.
