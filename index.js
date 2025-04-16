@@ -1,3 +1,7 @@
+const http = require('http');
+
+http.createServer((req, res) => {
+  res.end(`
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,9 +16,6 @@
 </style>
 </head>
 <body>
-<p>
-<img src="logo.png" width=550 height=200 border=0 alt="Imagem" title="Imagem">
-</p>
 <h2>Bem vindo ao Servidor de Aplicações do Instituto de Computação da UFBA!</h2>
 <p>Lembramos de antemão que o primeiro <b>push</b> da sua aplicação, deverá ser realizado com o modificador <b>-f</b> conforme a seguir:</p>
 <p>$ git push <b>-f</b> dokku master</p>
@@ -25,3 +26,5 @@
 <p><em>Obrigado por utilizar os nossos serviços!</em></p>
 </body>
 </html>
+`);
+}).listen(process.env.PORT || 3000);
